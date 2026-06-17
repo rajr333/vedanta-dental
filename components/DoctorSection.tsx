@@ -1,0 +1,39 @@
+"use client";
+import Image from "next/image";
+
+export default function DoctorSection() {
+  return (
+    <section id="doctor" className="section-padding" style={{ background: "var(--mint)" }}>
+      <div className="max-w-7xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-12 items-center">
+        <div className="order-last md:order-first">
+          <p className="text-label mb-3">◆ MEET YOUR DENTIST</p>
+          <h2 className="text-display" style={{ color: "var(--ink)", marginBottom: "0.5rem" }}>Dr. [Name], BDS</h2>
+          <p style={{ fontSize: "0.9rem", color: "var(--teal)", fontWeight: 600, marginBottom: "2rem" }}>Lead Dental Surgeon</p>
+          
+          <p style={{ fontSize: "1.05rem", color: "var(--stone)", marginBottom: "2rem" }}>
+            With years of experience in comprehensive dental care, Dr. [Name] is dedicated to providing pain-free, modern treatments. Their approachable nature and commitment to excellence ensure that every patient feels comfortable and confident.
+          </p>
+
+          <div style={{ display: "flex", gap: "1.5rem", marginBottom: "2.5rem" }}>
+            <div>
+              <p style={{ fontSize: "1.5rem", fontFamily: "var(--font-display)", color: "var(--ink)" }}>10+</p>
+              <p style={{ fontSize: "0.75rem", color: "var(--stone)", textTransform: "uppercase", fontWeight: 600 }}>Years Exp.</p>
+            </div>
+            <div>
+              <p style={{ fontSize: "1.5rem", fontFamily: "var(--font-display)", color: "var(--ink)" }}>5k+</p>
+              <p style={{ fontSize: "0.75rem", color: "var(--stone)", textTransform: "uppercase", fontWeight: 600 }}>Patients</p>
+            </div>
+          </div>
+
+          <blockquote style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontStyle: "italic", color: "var(--ink)", borderLeft: "3px solid var(--teal)", paddingLeft: "1.5rem" }}>
+            "Every patient deserves to leave with more confidence than they walked in with."
+          </blockquote>
+        </div>
+
+        <div style={{ borderRadius: "24px", overflow: "hidden", boxShadow: "0 12px 40px rgba(15,32,39,0.10)" }}>
+          <Image src="/images/doctor/dr-portrait.webp" alt="Dr. [Name]" width={600} height={700} style={{ width: "100%", height: "auto", objectFit: "cover" }} />
+        </div>
+      </div>
+    </section>
+  );
+}
