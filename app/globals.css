@@ -24,7 +24,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: auto; -webkit-font-smoothing: antialiased; }
+html { scroll-behavior: auto; -webkit-font-smoothing: antialiased; color-scheme: light only; }
 html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 

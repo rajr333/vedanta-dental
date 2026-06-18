@@ -7,8 +7,11 @@ export default function DoctorSection() {
       <div className="max-w-7xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-12 items-center">
         <div className="order-last md:order-first">
           <p className="text-label mb-3">◆ MEET YOUR DENTIST</p>
-          <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "0.5rem" }}>
-            <h2 className="text-display" style={{ color: "var(--ink)", margin: 0 }}>Dr. Raghav Chaudhary <span style={{ fontSize: "1.2rem", color: "var(--stone)" }}>(Dr. B. Chowdhary)</span>, BDS</h2>
+          <div className="mb-3">
+            <h2 className="font-display font-medium text-ink" style={{ fontSize: "clamp(2rem, 6vw, 3.5rem)", lineHeight: 1.1, margin: 0 }}>
+              Dr. Raghav Chaudhary, BDS
+              <span className="block md:inline md:ml-3 text-stone" style={{ fontSize: "clamp(1.1rem, 3.5vw, 1.4rem)" }}>(Dr. B. Chowdhary)</span>
+            </h2>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "2rem", flexWrap: "wrap" }}>
             <p style={{ fontSize: "0.9rem", color: "var(--teal)", fontWeight: 600 }}>Dental Surgeon — Ex. Resident, Jawaharlal Nehru Hospital, Bhilai Steel Plant</p>
