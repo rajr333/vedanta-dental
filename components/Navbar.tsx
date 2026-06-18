@@ -17,6 +17,33 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [bookingOpen, setBookingOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
+  const [statusText, setStatusText] = useState("10 AM - 2 PM & 3 PM - 7 PM");
+
+  useEffect(() => {
+    const updateStatus = () => {
+      const now = new Date();
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const istDate = new Date(utc + (3600000 * 5.5));
+      const h = istDate.getHours();
+      
+      if (h >= 10 && h < 14) {
+        setIsOpen(true);
+        setStatusText("Open · Closes 2 PM");
+      } else if (h >= 15 && h < 19) {
+        setIsOpen(true);
+        setStatusText("Open · Closes 7 PM");
+      } else {
+        setIsOpen(false);
+        if (h >= 14 && h < 15) setStatusText("Closed · Opens 3 PM");
+        else if (h < 10) setStatusText("Closed · Opens 10 AM");
+        else setStatusText("Closed");
+      }
+    };
+    updateStatus();
+    const interval = setInterval(updateStatus, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -28,10 +55,11 @@ export default function Navbar() {
     <>
       <nav className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${scrolled ? "glass-nav py-3" : "bg-transparent py-5"}`}>
         <div className="flex items-center justify-between px-6 md:px-12 max-w-7xl mx-auto">
-          <a href="#" className="flex items-center gap-2">
-            <span style={{ fontFamily: "var(--font-display)", fontSize: "1.4rem", color: "var(--teal)", fontWeight: 600 }}>
+          <a href="#" className="flex flex-col" style={{ textDecoration: "none" }}>
+            <span style={{ fontFamily: "var(--font-display)", fontSize: "1.4rem", color: "var(--teal)", fontWeight: 600, lineHeight: 1.1 }}>
               Vedanta <span style={{ color: "var(--ink)" }}>Dental Care</span>
             </span>
+            <span style={{ fontSize: "0.65rem", color: "var(--stone)", fontStyle: "italic", fontWeight: 600, marginTop: "0.1rem" }}>Caring your smile...</span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
@@ -43,9 +71,9 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-            <div className="flex items-center gap-1.5" style={{ fontSize: "0.75rem", color: "var(--success)" }}>
-              <span style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--success)", display: "inline-block" }} />
-              Open · Closes 7 PM
+            <div className="flex items-center gap-1.5" style={{ fontSize: "0.75rem", color: isOpen ? "var(--success)" : "var(--stone)" }}>
+              <span style={{ width: 6, height: 6, borderRadius: "50%", background: isOpen ? "var(--success)" : "var(--stone)", display: "inline-block" }} />
+              {statusText}
             </div>
             <button onClick={() => setBookingOpen(true)} style={{
               background: "var(--teal)", color: "white", padding: "0.65rem 1.5rem",

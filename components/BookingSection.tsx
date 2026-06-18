@@ -13,7 +13,7 @@ export default function BookingSection() {
           <a href="#booking" style={{ background: "var(--teal)", color: "white", padding: "1rem 2.5rem", borderRadius: "9999px", fontWeight: 600, textDecoration: "none", display: "inline-block" }}>
             BOOK APPOINTMENT
           </a>
-          <p style={{ fontSize: "0.9rem", color: "var(--stone)" }}>Or call us directly: <span style={{ fontWeight: 600, color: "var(--ink)" }}>+91 XXXXX XXXXX</span></p>
+          <p style={{ fontSize: "0.9rem", color: "var(--stone)" }}>Or call us directly: <a href="tel:+917000560853" style={{ fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>+91 70005 60853</a></p>
         </div>
       </div>
     </section>

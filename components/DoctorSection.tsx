@@ -7,11 +7,16 @@ export default function DoctorSection() {
       <div className="max-w-7xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-12 items-center">
         <div className="order-last md:order-first">
           <p className="text-label mb-3">◆ MEET YOUR DENTIST</p>
-          <h2 className="text-display" style={{ color: "var(--ink)", marginBottom: "0.5rem" }}>Dr. Rakesh Sharma, BDS</h2>
-          <p style={{ fontSize: "0.9rem", color: "var(--teal)", fontWeight: 600, marginBottom: "2rem" }}>Lead Dental Surgeon</p>
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "0.5rem" }}>
+            <h2 className="text-display" style={{ color: "var(--ink)", margin: 0 }}>Dr. Raghav Chaudhary <span style={{ fontSize: "1.2rem", color: "var(--stone)" }}>(Dr. B. Chowdhary)</span>, BDS</h2>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "2rem", flexWrap: "wrap" }}>
+            <p style={{ fontSize: "0.9rem", color: "var(--teal)", fontWeight: 600 }}>Dental Surgeon — Ex. Resident, Jawaharlal Nehru Hospital, Bhilai Steel Plant</p>
+            <span style={{ fontSize: "0.75rem", background: "var(--teal-pale)", color: "var(--teal)", padding: "0.2rem 0.6rem", borderRadius: "99px", fontWeight: 600, whiteSpace: "nowrap" }}>Reg. No.: 8214/A</span>
+          </div>
           
           <p style={{ fontSize: "1.05rem", color: "var(--stone)", marginBottom: "2rem" }}>
-            With years of experience in comprehensive dental care, Dr. Rakesh Sharma is dedicated to providing pain-free, modern treatments. His approachable nature and commitment to excellence ensure that every patient feels comfortable and confident.
+            A BDS graduate from Raipur and former resident at Jawaharlal Nehru Hospital, Bhilai Steel Plant, Dr. Chaudhary brings hospital-grade expertise to every patient at Vedanta Dental Care.
           </p>
 
           <div style={{ display: "flex", gap: "1.5rem", marginBottom: "2.5rem" }}>

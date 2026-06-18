@@ -24,11 +24,11 @@ export default function LocationMapSection() {
             </div>
             <div>
               <p className="text-label mb-2">HOURS</p>
-              <p style={{ fontSize: "1rem", color: "var(--success)" }}>Open Today · Closes 7 PM</p>
+              <p style={{ fontSize: "1rem", color: "var(--success)" }}>10:00 AM – 2:00 PM<br/>3:00 PM – 7:00 PM</p>
             </div>
             <div>
               <p className="text-label mb-2">PHONE</p>
-              <a href="tel:+910000000000" style={{ fontSize: "1rem", color: "var(--teal)", fontWeight: 600 }}>+91 XXXXX XXXXX</a>
+              <a href="tel:+917000560853" style={{ fontSize: "1rem", color: "var(--teal)", fontWeight: 600, textDecoration: "none" }}>+91 70005 60853</a>
             </div>
             <a href="https://www.google.com/maps/dir/?api=1&destination=Vedanta+Dental+Care+Yadav+Nagar+Muzaffarpur+Bihar+843113"
               target="_blank" rel="noopener noreferrer"

@@ -5,7 +5,8 @@ export default function Footer() {
     <footer style={{ background: "var(--ink)", color: "var(--teal-pale)", padding: "4rem 1.5rem 2rem" }}>
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8 mb-8">
         <div>
-          <p style={{ fontFamily: "var(--font-display)", fontSize: "1.4rem", color: "white", marginBottom: "0.75rem" }}>Vedanta Dental Care</p>
+          <p style={{ fontFamily: "var(--font-display)", fontSize: "1.4rem", color: "white", marginBottom: "0.2rem" }}>Vedanta Dental Care</p>
+          <p style={{ fontSize: "0.8rem", color: "var(--teal-bright)", fontStyle: "italic", marginBottom: "0.75rem" }}>Caring your smile...</p>
           <p style={{ fontSize: "0.8rem", opacity: 0.7, lineHeight: 1.8 }}>
             Yadav Nagar, Muzaffarpur,<br />Bihar 843113
           </p>
@@ -24,8 +25,8 @@ export default function Footer() {
         </div>
         <div>
           <p className="text-label" style={{ color: "var(--teal-bright)", marginBottom: "1rem" }}>CONTACT</p>
-          <p style={{ fontSize: "0.85rem", opacity: 0.8, marginBottom: "0.6rem" }}>+91 XXXXX XXXXX</p>
-          <p style={{ fontSize: "0.85rem", opacity: 0.8 }}>Open Today · Closes 7 PM</p>
+          <a href="tel:+917000560853" style={{ display: "block", fontSize: "0.85rem", opacity: 0.8, marginBottom: "0.6rem", color: "inherit", textDecoration: "none" }}>+91 70005 60853</a>
+          <p style={{ fontSize: "0.85rem", opacity: 0.8, lineHeight: 1.5 }}>10:00 AM – 2:00 PM<br/>3:00 PM – 7:00 PM</p>
         </div>
       </div>
       <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "1.5rem", textAlign: "center", fontSize: "0.75rem", opacity: 0.6 }}>

@@ -38,14 +38,14 @@ export default function HeroSection() {
             <StarRating rating={4.9} />
             <span>78 Happy Patients</span>
             <span>·</span>
-            <span style={{ color: "var(--success)" }}>Open Until 7 PM</span>
+            <span style={{ color: "var(--success)" }}>10 AM - 2 PM & 3 PM - 7 PM</span>
           </div>
 
           <div className="hero-fade flex gap-4 flex-wrap">
             <button onClick={() => setBookingOpen(true)} style={{ background: "var(--teal)", color: "white", padding: "1rem 2rem", borderRadius: "9999px", fontWeight: 600, fontSize: "0.9rem", minHeight: "44px" }}>
               Book Appointment
             </button>
-            <a href="tel:+910000000000" style={{ display: "flex", alignItems: "center", border: "1.5px solid var(--teal)", color: "var(--teal)", padding: "0.5rem 2rem", borderRadius: "9999px", fontWeight: 600, fontSize: "0.9rem", minHeight: "44px" }}>
+            <a href="tel:+917000560853" style={{ display: "flex", alignItems: "center", border: "1.5px solid var(--teal)", color: "var(--teal)", padding: "0.5rem 2rem", borderRadius: "9999px", fontWeight: 600, fontSize: "0.9rem", minHeight: "44px", textDecoration: "none" }}>
               📞 Call Now
             </a>
           </div>
