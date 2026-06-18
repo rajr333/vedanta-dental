@@ -31,7 +31,7 @@ export default function AboutSection() {
 
           <div style={{ background: "var(--teal-pale)", padding: "1.5rem", borderRadius: "16px", display: "flex", flexDirection: "column", gap: "0.5rem", border: "1px solid var(--glass-border)" }}>
             <p style={{ fontWeight: 600, color: "var(--ink)" }}>📍 Yadav Nagar, Muzaffarpur, Bihar 843113</p>
-            <a href="https://www.google.com/maps/dir/?api=1&destination=Vedanta+Dental+Care+Yadav+Nagar+Muzaffarpur+Bihar+843113" target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.85rem", color: "var(--teal)", fontWeight: 600, textDecoration: "none" }}>Get Directions →</a>
+            <a href="https://maps.app.goo.gl/i1pPfFhg76ZE1xFi9" target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.85rem", color: "var(--teal)", fontWeight: 600, textDecoration: "none" }}>Get Directions →</a>
           </div>
         </div>
       </div>

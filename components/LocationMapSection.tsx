@@ -30,7 +30,7 @@ export default function LocationMapSection() {
               <p className="text-label mb-2">PHONE</p>
               <a href="tel:+917000560853" style={{ fontSize: "1rem", color: "var(--teal)", fontWeight: 600, textDecoration: "none" }}>+91 70005 60853</a>
             </div>
-            <a href="https://www.google.com/maps/dir/?api=1&destination=Vedanta+Dental+Care+Yadav+Nagar+Muzaffarpur+Bihar+843113"
+            <a href="https://maps.app.goo.gl/i1pPfFhg76ZE1xFi9"
               target="_blank" rel="noopener noreferrer"
               style={{ background: "var(--teal)", color: "white", padding: "0.9rem 2rem", borderRadius: "9999px", fontWeight: 600, textAlign: "center", textDecoration: "none", width: "fit-content" }}>
               Get Directions
