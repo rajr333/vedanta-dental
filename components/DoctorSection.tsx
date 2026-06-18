@@ -30,9 +30,10 @@ export default function DoctorSection() {
           </blockquote>
         </div>
 
-        <div style={{ borderRadius: "24px", overflow: "hidden", boxShadow: "0 12px 40px rgba(15,32,39,0.10)", position: "relative" }}>
-          <Image src="/images/doctor/dr-portrait.jpg" alt="Dr. Rakesh Sharma" width={600} height={700} style={{ width: "100%", height: "100%", aspectRatio: "4/5", objectFit: "cover", objectPosition: "25% center", filter: "saturate(0.8)" }} />
-          <div style={{ position: "absolute", inset: 0, backgroundColor: "var(--teal)", opacity: 0.08, mixBlendMode: "multiply", pointerEvents: "none" }}></div>
+        <div style={{ background: "var(--teal-pale)", padding: "20px", borderRadius: "24px", boxShadow: "0 12px 40px rgba(15,32,39,0.10)" }}>
+          <div style={{ borderRadius: "16px", overflow: "hidden", boxShadow: "0 4px 15px rgba(15,32,39,0.08)", border: "2px solid var(--teal)", position: "relative" }}>
+            <Image src="/images/doctor/dr-portrait.jpg" alt="Dr. Rakesh Sharma" width={600} height={700} style={{ width: "100%", height: "100%", aspectRatio: "4/5", objectFit: "cover", objectPosition: "25% center" }} />
+          </div>
         </div>
       </div>
     </section>
