@@ -37,7 +37,7 @@ export default function DoctorSection() {
 
         <div style={{ background: "var(--teal-pale)", padding: "20px", borderRadius: "24px", boxShadow: "0 12px 40px rgba(15,32,39,0.10)" }}>
           <div style={{ borderRadius: "16px", overflow: "hidden", boxShadow: "0 4px 15px rgba(15,32,39,0.08)", border: "2px solid var(--teal)", position: "relative" }}>
-            <Image src="/images/doctor/dr-portrait.jpg" alt="Dr. Rakesh Sharma" width={600} height={700} style={{ width: "100%", height: "100%", aspectRatio: "4/5", objectFit: "cover", objectPosition: "25% center" }} />
+            <Image src="/images/doctor/dr-portrait.jpg" alt="Dr. Raghav Chaudhary" width={600} height={700} style={{ width: "100%", height: "100%", aspectRatio: "4/5", objectFit: "cover", objectPosition: "25% center" }} />
           </div>
         </div>
       </div>

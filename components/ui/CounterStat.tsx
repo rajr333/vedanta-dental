@@ -11,12 +11,24 @@ export default function CounterStat({ target, suffix = "", decimals = 0, classNa
     const el = ref.current;
     if (!el) return;
     const obj = { val: 0 };
-    gsap.to(obj, {
-      val: target, duration: 1.6, ease: "power2.out",
-      scrollTrigger: { trigger: el, start: "top 90%", toggleActions: "play none none none" },
-      onUpdate: () => { el.textContent = `${obj.val.toFixed(decimals)}${suffix}`; },
-    });
-    return () => { ScrollTrigger.getAll().forEach((st) => { if (st.trigger === el) st.kill(); }); };
+    
+    const ctx = gsap.context(() => {
+      gsap.to(obj, {
+        val: target, 
+        duration: 1.6, 
+        ease: "power2.out",
+        scrollTrigger: { 
+          trigger: el, 
+          start: "top 95%", 
+          toggleActions: "play none none none" 
+        },
+        onUpdate: () => { 
+          if (el) el.textContent = `${obj.val.toFixed(decimals)}${suffix}`; 
+        },
+      });
+    }, el);
+
+    return () => ctx.revert();
   }, [target, suffix, decimals]);
 
   return <span ref={ref} className={className}>0{suffix}</span>;

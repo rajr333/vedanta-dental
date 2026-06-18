@@ -4,7 +4,7 @@ import StarRating from "./ui/StarRating";
 const REVIEWS = [
   { name: "Rahul S.", rating: 5, quote: "Absolutely the best dental clinic in Muzaffarpur. The clinic is spotless and the doctor makes sure you feel zero pain during the procedure." },
   { name: "Neha K.", rating: 5, quote: "Got my teeth whitened here. The results were amazing and the entire staff was so polite and welcoming. Highly recommend!" },
-  { name: "Amit V.", rating: 5, quote: "I was always scared of dentists, but Dr. [Name] changed that. Very patient, explained everything clearly. Truly 5-star service." },
+  { name: "Amit V.", rating: 5, quote: "I was always scared of dentists, but Dr. Chaudhary changed that. Very patient, explained everything clearly. Truly 5-star service." },
 ];
 
 export default function TestimonialsSection() {
